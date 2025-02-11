@@ -224,7 +224,7 @@ This assignment includes 20 Bash scripting exercises focused on Linux system adm
 - Use `groupadd`, `useradd`, and `usermod` or `usermod -aG`.
 </details>
 
-**Sample CSV Provided**: [See below for `sample_users.csv`](#sample-userscsv).
+**Sample CSV Provided**: [See below for `sample_users.csv`](https://github.com/Devesh-N/bash-assignment/blob/main/sample.MD#1-sample-users-csv).
 
 ---
 
