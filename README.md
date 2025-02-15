@@ -51,7 +51,7 @@ root@ip-#-#-#-2:~# tracepath github.com
 
 ### 3. Monitoring Open Ports with netstat
 
-![alt text](image.png)
+![alt text](Netstat.PNG)
 
 * identifyng the ports listening from above snaps
   * SSHD with port 22
