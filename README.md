@@ -110,3 +110,13 @@ github.com.             60      IN      A       4.208.26.197
 ;; MSG SIZE  rcvd: 55
 
 ```
+
+* THe Public IP returned for github.com is 4.208.26.197
+* dig responds with multiple informations such as, Query time, Server used, Response status, and we can process multiple DNS queris by using a file and allow specifying a DNS server to query
+* 
+            dig -f filename
+            dig @8.8.8.8 example.com
+* 'nslookup': Simple and less detailed compared to dig.
+
+## Part B: Theory Questions
+
