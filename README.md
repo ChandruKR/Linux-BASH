@@ -61,7 +61,7 @@ root@ip-#-#-#-2:~# tracepath github.com
 
 ### 4. Fetching Http Headers with Curl
 
-![alt text](CURL.png)
+![alt text](CURL.PNG)
 
 * What are the key HTTP response headers you observe?
   * Http response code, Content-Tpe, Server, Last modified 
