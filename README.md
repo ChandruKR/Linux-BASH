@@ -70,5 +70,43 @@ root@ip-#-#-#-2:~# tracepath github.com
     * 200 OK: The request was successful
   * Next: Content-Type: text/html; charset=UTF-8
     *  Specifies the media type (MIME type) 
-   *  Last-Modified
-      * The date and time when the resource was last modified. Used for caching and conditional requests.
+   *  Server: gws
+      *  Identifies the server software handling the request.
+### 5.  Domain Name Resolution with dig/nslookup
+
+nslookup:
+```bash
+root@MYLINUXEC2:~# nslookup github.com
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   github.com
+Address: 4.208.26.197
+
+```
+
+dig: 
+```bash
+root@MYLINUXEC2:~# dig github.com
+
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> github.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 20129
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;github.com.                    IN      A
+
+;; ANSWER SECTION:
+github.com.             60      IN      A       4.208.26.197
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Sat Feb 15 00:59:18 UTC 2025
+;; MSG SIZE  rcvd: 55
+
+```
