@@ -58,3 +58,17 @@ root@ip-#-#-#-2:~# tracepath github.com
   * local DNS service under port 53
   * Chronyd for time sync under port 323 (UDP)
   * bunch of loopback IP and ports belonging to backend SSHd child processes
+
+### 4. Fetching Http Headers with Curl
+
+![alt text](CURL.png)
+
+* What are the key HTTP response headers you observe?
+  * Http response code, Content-Tpe, Server, Last modified 
+* What do these headers indicate about the website’s server or security configuration?
+  * The first line of the response indicates the HTTP version, status code, and status message.
+    * 200 OK: The request was successful
+  * Next: Content-Type: text/html; charset=UTF-8
+    *  Specifies the media type (MIME type) 
+   *  Last-Modified
+      * The date and time when the resource was last modified. Used for caching and conditional requests.
